@@ -3,27 +3,37 @@
 <head>
 <meta charset="utf-8">
 <title>Google Homepage</title>
-<link rel="stylesheet" href="stylesheet.css" type="text/css"> 
+<link rel="stylesheet" href="stylesheet.css" type="text/css"/> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 </head>
 <body>
     <div class=page></div>
         <header>
             <div class=header-container>
-                <nav class=header-links>
+                <nav>
                     <Ul>
-                        <li><a href ="http://www.gmail.com">Gmail</a></li>
-                        <li><a href ="www.gmail.com">Images</a></li>
-                        <li><a href ="www.gmail.com"><img src="dots.png" width="20px" height="20px"></a></li>
-                        <li><a href ="www.gmail.com"><img src="profile-pic.png" width="40px" height="40px"></a></li>
+                        <div class="header-links">
+                            <li><a href ="http://www.gmail.com">Gmail</a></li>
+                            <li><a href ="www.gmail.com">Images</a></li>
+                            <li><a href ="www.gmail.com"><img src="dots.png" width="20px" height="20px"></a></li>
+                            <li class=profile><a href ="www.gmail.com"><img src="profile-pic.png" width="40px" height="40px"></a></li>
+                        </div>
                     </Ul>
                 </nav>
             </div>
         </header>
-        <section>
+        <section class="content-container">
             <div class=content>
-                <img src="#"/>
-                <div class=search-bar></div>
-                <div class="buttons"></div>
+                <img src="googlelogo.png"/>
+                <form action="search.html" method="get">
+                    <div class=search-bar>
+                        <input type="text" placeholder="&#xF002;" style="font-family:Arial, FontAwesome" />
+                    </div>
+                    <div class="buttons">
+                        <input type="button" value="Google Search">
+                        <input type="button" value="I'm Feeling Lucky">
+                    </div>
+                </form>
             </div>
         </section>
         <footer>
@@ -32,14 +42,22 @@
                 <div class=footer2>
                     <nav class=footer2-links>
                         <Ul>
-                            <li><a href ="http://www.gmail.com">Advertising</a></li>
-                            <li><a href ="www.gmail.com">Business</a></li>
-                            <li><a href ="www.gmail.com">About</a></li>
-                            <li><a href ="www.gmail.com">How Search works</a></li>
+                            <div class="footer2-links-l">
+                                <li><a href ="http://www.gmail.com">Advertising</a></li>
+                                <li><a href ="www.gmail.com">Business</a></li>
+                                <li><a href ="www.gmail.com">About</a></li>
+                                <li><a href ="www.gmail.com">How Search works</a></li>
+                            </div>
+                            <div class="footer2-links-r">
+                                <li class=privacy><a href ="http://www.gmail.com">Privacy</a></li>
+                                <li class=terms><a href ="www.gmail.com">Terms</a></li>
+                                <li class=settings><a href ="www.gmail.com">Settings</a></li>
+                            </div>
+                        
                         </Ul>
                     </nav>
                 </div>
             </div>
         </footer>
-    </div>
+    
 </body>
