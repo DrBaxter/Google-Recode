@@ -6,9 +6,6 @@
     color: darkslategrey;
     font-family: Roboto, Helvetica, Arial, sans-serif;
 }
-.page{
-    display: flex;  
-}
 
 li{
     list-style: none;
@@ -38,6 +35,8 @@ li{
 .profile{
     margin-right: 10px;
 }
+
+
 
 .content-container{
     height: auto;
@@ -76,20 +75,21 @@ li{
 .footer1{
     display: flex;
     border-top: 1px solid darkgray;
-    height: 30px;
+    height: 40px;
     margin-left: 20px;
     align-items: center;
 }
-
-.footer2{
+/*
+.footer2-links{
     display:flex;
-    
+    justify-content: space-between;
     border-top: 1px solid darkgray;
 }
 .footer2-links-l{
     display:flex;
     justify-content: flex-start;
     margin-top: auto;
+    margin-left: 20px;
     border: 1px solid white;
 
 }
@@ -97,8 +97,24 @@ li{
 .footer2-links-r{
     display:flex;
     justify-content: flex-end;
-    border: 1px solid white;    
+    border: 1px solid white;
+    margin-left: auto;    
+} */
+
+
+.footer2{
+    display:flex;
+    padding: 10px;
+    border-top: 1px darkgray solid;
 }
+
+.privacy{
+    margin-left: auto;
+}
+
+.no-wrap{
+    flex-shrink: 0;
+  }
 
 .buttons{
     display: flex;
