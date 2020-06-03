@@ -15,14 +15,13 @@ li{
 
 .header-container{
     display:flex;
-    background-color: lightcoral;
+    background-color: #FFFFFF;
     justify-content: flex-end;
-    padding: 10px 20px;  
+    padding: 10px 10px;  
 }
 
 .header-links{
     display:flex;
-    justify-content: flex-end;
     align-items: center;
     color: black;
 }
@@ -31,12 +30,6 @@ li{
     color: black;
     font-size: .9em;
 }
-
-.profile{
-    margin-right: 10px;
-}
-
-
 
 .content-container{
     height: auto;
@@ -62,59 +55,17 @@ li{
 .content >*{
     margin-top: 20px;
 }
-.footer-container{
+
+.search-bar input[type=text]{
+    width: 500px;
+    color: red;
+    border: 1px lightgrey solid;
+    border-radius: 22px;
+    height: 44px;
+    margin-top: 10px;
+    padding-left: 20px;
     
-    background-color: rgb(141, 196, 218);
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    margin-bottom: 0px;
-   justify-content: space-between;
-    
 }
-.footer1{
-    display: flex;
-    border-top: 1px solid darkgray;
-    height: 40px;
-    margin-left: 20px;
-    align-items: center;
-}
-/*
-.footer2-links{
-    display:flex;
-    justify-content: space-between;
-    border-top: 1px solid darkgray;
-}
-.footer2-links-l{
-    display:flex;
-    justify-content: flex-start;
-    margin-top: auto;
-    margin-left: 20px;
-    border: 1px solid white;
-
-}
-
-.footer2-links-r{
-    display:flex;
-    justify-content: flex-end;
-    border: 1px solid white;
-    margin-left: auto;    
-} */
-
-
-.footer2{
-    display:flex;
-    padding: 10px;
-    border-top: 1px darkgray solid;
-}
-
-.privacy{
-    margin-left: auto;
-}
-
-.no-wrap{
-    flex-shrink: 0;
-  }
 
 .buttons{
     display: flex;
@@ -122,9 +73,7 @@ li{
 border: 1px solid white;
 }
 
-.settings{
-    margin-right: 20px;
-}
+
 
 .buttons input[type=button]{
     border: none;
@@ -136,13 +85,38 @@ border: 1px solid white;
     
 }
 
-.search-bar input[type=text]{
-        width: 500px;
-        color: red;
-        border: 1px lightgrey solid;
-        border-radius: 22px;
-        height: 44px;
-        margin-top: 10px;
-        padding-left: 20px;
-        
+
+.footer-container{
+    
+    background-color: #cacaca;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 0px;
+   justify-content: space-between;
+    
 }
+.footer1{
+    display: flex;
+    border-top: 1px  darkgray solid;
+    padding: 10px 20px;
+    align-items: center;
+}
+.footer2{
+    display:flex;
+    padding: 10px;
+    border-top: 1px darkgray solid;
+    margin-right: 10px;
+}
+
+.privacy{
+    margin-left: auto;
+}
+
+.no-wrap{
+    flex-shrink: 0;
+}
+
+
+
+
