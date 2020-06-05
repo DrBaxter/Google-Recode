@@ -17,20 +17,22 @@
                 </Ul>
             </nav>
         </header>
-        <section class="content-container">
-            <div class=content>
+        <div class="content">
+            <form action="search.html" method="get" class="content-container">
                 <img src="googlelogo.png"/>
-                <form action="search.html" method="get">
-                    <div class=search-bar>
-                        <input type="text" placeholder="&#xF002;" style="font-family:Arial, FontAwesome" />
+                <div class=search-bar>
+                    <input type="search" id="search" name="search" placeholder="&#xF002;" style="font-family:Arial, FontAwesome" />
+                    <div class=buttons>
+                        <button>Google Search</button>
+                        <button>I'm feeling Lucky</button>
                     </div>
-                    <div class="buttons">
-                        <input type="button" value="Google Search">
-                        <input type="button" value="I'm Feeling Lucky">
-                    </div>
-                </form>
-            </div>
-        </section>
+                </div>
+                <!--<div class="buttons">
+                    <input type="submit" value="Google Search">
+                    <input type="button" value="I'm Feeling Lucky">
+                </div>-->
+            </form>
+        </div>
         <footer>
             <div class=footer-container>
                 <div class=footer1>Ireland</div>
