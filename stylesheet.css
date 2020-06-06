@@ -12,99 +12,141 @@ li{
     margin: 0px 10px;
 }
 
-
 .header-container{
     display:flex;
     background-color: #FFFFFF;
-    justify-content: flex-end;
-    padding: 10px 10px;  
+    padding: 0px 10px;  
+    height: 60px;
+    
 }
 
 .header-links{
     display:flex;
-    align-items: center;
+    
     color: black;
+    width: 100vw;
+    text-transform: uppercase;
+    align-items: center;
+    
 }
 
 .header-links  a{
     color: black;
     font-size: .9em;
+    
+}
+.all{
+    display:flex;
+    align-self: stretch;
+    align-items:center;
+    margin-bottom: 0px;
+    border-bottom: 2px solid rgb(100, 123, 255);
 }
 
-.content-container{
-    height: auto;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid white;
-    flex-direction: column;
 
+.all a{
+    color:rgb(100, 123, 255);
+    
 }
 
 .content{
     
     display: flex;
-    
-    height: 600px;
     justify-content: center;
-    align-items: center;
-
-}
-
-.content >*{
-    margin-top: 20px;
-}
-
-.search-bar input[type=search]{
-    width: 500px;
-    color: red;
-    border: 1px lightgrey solid;
-    border-radius: 22px;
-    height: 44px;
-    margin-top: 10px;
-    padding-left: 20px;
     
 }
 
-.buttons{
+
+
+.content-container{
+    
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 0px;
+}
+
+.m-search{
+    display: flex;
+     height: 44px;
+     align-items: center;
+     text-align: center;
+     margin: auto;
+}
+
+ .search-bar input[type=search]{
+    margin-top: 30px;
+    border: 1px lightgrey solid;
+    border-radius:22px  0px 0px 22px ;
+    height: 44px;
+    width: 85vw;
+    
+}
+
+.fa-search{
+    color: white;
+}
+
+
+
+
+.m-button{
+margin-top: 30px;
+display: flex;
+border-radius: 0 22px 22px 0;
+padding-left: 8px;
+padding-right: 8px;
+background-color: #3b78e7;
+border: 1px solid #3367d6;
+height: 44px;
+align-items: center;
+width: 34px;
+}
+
+
+
+.d-buttons{
     display: block;
     text-align: center;
 }
 
-
-.search-bar button{
-    border: 1px solid white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 3px;
-    font-weight: lighter;
-    margin:30px 10px 20px 0px;
-    color:  #868686;
-  
-}
-
-
-.footer-container{
-    
-    background-color: #F6F7F8;
+.footer-fixer{
+    display: flex;
     position: fixed;
     bottom: 0px;
     width: 100%;
-    margin-bottom: 0px;
-   justify-content: space-between;
-    
+
+
 }
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #f2f2f2;
+
+}
+
 .footer1{
     display: flex;
-    border-top: 1px solid  #D6D9DC;
-    padding: 10px 20px;
-    align-items: center;
+    border-top: 1px solid rgb(234, 235, 236);
+    padding: 10px 0px 25px 20px;
+    color: grey;
+    height: 30px;
+    width: 100%;
+    
+    display: block;
+    
 }
 .footer2{
+    display: block;
     display:flex;
-    padding: 10px;
-    border-top: 1px solid #D6D9DC;
-    margin-right: 10px;
+    padding: 10px 20px 10px 10px;
+    border-top: 1px solid rgb(234, 235, 236);
+    
+}
+
+.footer2 a{
+    color:rgb(92, 92, 92);
 }
 
 .privacy{
@@ -117,4 +159,60 @@ li{
 
 
 
+/*Desktop Style*/
+@media only screen and (min-width:961px){
 
+    .m-header-links{
+        display: none;
+        
+    }
+    .search-bar input[type=search]{
+            width: 500px; 
+    }
+ 
+    .header-links{
+        justify-content: flex-end;
+        text-transform: capitalize;
+    }
+    .m-search{
+        display: none;
+    }
+
+    .search-bar button{
+        border: none;
+        padding: 10px 15px;
+        border-radius: 3px;
+        font-weight: lighter;
+        margin:30px 10px 20px 0px;
+        color:  #868686;
+    }
+
+    .search-bar input[type=search]{
+        border-radius:22px;
+        width: 500px;
+        padding-left: 15px;
+}
+
+}
+
+/*Mobile Style*/
+@media only screen and (max-width:960px){
+    .d-header-links{
+        display:none;
+        
+    }
+    .images{
+        margin-right: auto;
+    }
+.header-container{
+}
+.images  {
+    margin-right:auto;
+}  
+.d-search{
+    display: none;
+}
+
+
+}
+}
